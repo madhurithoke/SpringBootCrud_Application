@@ -12,8 +12,8 @@ This is a Spring Boot-based CRUD application that manages **categories** and **p
 
 ### **2. Service Layer**
 - **Files**:
-  - CategoryServiceI.java and CategoryServiceImpl.java - Business logic for categories.
-  - ProductServiceI.java and ProductServiceImpl.java  - Business logic for products.
+  - CategoryServiceI.java  and  CategoryServiceImpl.java - Business logic for categories.
+  - ProductServiceI.java  and  ProductServiceImpl.java  - Business logic for products.
 
 ### **3. Repository Layer**
 - **Files**:
