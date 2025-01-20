@@ -220,7 +220,8 @@ This is a Spring Boot-based CRUD application that manages **categories** and **p
 2. **DataBase** : MySql Workbench
 3. **Dependency Management** : Maven
 4. **Build Tools** : Spring Boot DevTools
-5. **API Testing** : Postman
+5. **Repositories** : Spring Data JPA
+6. **API Testing** : Postman
 
 
 
