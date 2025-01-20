@@ -7,23 +7,23 @@ This is a Spring Boot-based CRUD application that manages **categories** and **p
 
 ### **1. Controller Layer**
 - **Files**:
-  - CategoryController.java` - Handles HTTP requests for categories.
-  - ProductController.java` - Handles HTTP requests for products.
+  - CategoryController.java - Handles HTTP requests for categories.
+  - ProductController.java  - Handles HTTP requests for products.
 
 ### **2. Service Layer**
 - **Files**:
-  - CategoryServiceI.java` and `CategoryServiceImpl.java` - Business logic for categories.
-  - ProductServiceI.java` and `ProductServiceImpl.java` - Business logic for products.
+  - CategoryServiceI.java and CategoryServiceImpl.java - Business logic for categories.
+  - ProductServiceI.java and ProductServiceImpl.java  - Business logic for products.
 
 ### **3. Repository Layer**
 - **Files**:
-  - CategoryRepository.java` - Database operations for categories.
-  - ProductRepository.java` - Database operations for products.
+  - CategoryRepository.java - Database operations for categories.
+  - ProductRepository.java - Database operations for products.
 
 ### **4. Model Layer**
 - **Files**:
-  - Category.java` - Represents the category entity.
-  - Product.java` - Represents the product entity
+  - Category.java - Represents the category entity.
+  - Product.java  - Represents the product entity
 
 ## Database Relationships
 - **Category**:
@@ -75,7 +75,7 @@ This is a Spring Boot-based CRUD application that manages **categories** and **p
 
 #### **3. Get Category by ID**
 - **Method**: GET
-- **Endpoint**: `/api/categories/{id}`
+- **Endpoint**: /api/categories/{id}
 - **Response**:
   ```json
   {
@@ -86,7 +86,7 @@ This is a Spring Boot-based CRUD application that manages **categories** and **p
 
 #### **4. Update Category**
 - **Method**: PUT
-- **Endpoint**: `/api/categories/{id}`
+- **Endpoint**: /api/categories/{id}
 - **Body (Raw JSON)**:
   ```json
   {
@@ -103,7 +103,7 @@ This is a Spring Boot-based CRUD application that manages **categories** and **p
 
 #### **5. Delete Category**
 - **Method**: DELETE
-- **Endpoint**: `/api/categories/{id}`
+- **Endpoint**: /api/categories/{id}
 - **Response**:
   ```
   Category with ID {id} deleted successfully.
@@ -115,7 +115,7 @@ This is a Spring Boot-based CRUD application that manages **categories** and **p
 
 #### **1. Create Product**
 - **Method**: POST
-- **Endpoint**: `/api/products`
+- **Endpoint**: /api/products
 - **Body (Raw JSON)**:
   ```json
   {
@@ -139,7 +139,7 @@ This is a Spring Boot-based CRUD application that manages **categories** and **p
 
 #### **2. Get All Products**
 - **Method**: GET
-- **Endpoint**: `/api/products`
+- **Endpoint**: /api/products
 - **Response**:
   ```json
   [
@@ -157,7 +157,7 @@ This is a Spring Boot-based CRUD application that manages **categories** and **p
 
 #### **3. Get Product by ID**
 - **Method**: GET
-- **Endpoint**: `/api/products/{id}`
+- **Endpoint**: /api/products/{id}
 - **Response**:
   ```json
   {
@@ -173,7 +173,7 @@ This is a Spring Boot-based CRUD application that manages **categories** and **p
 
 #### **4. Update Product**
 - **Method**: PUT
-- **Endpoint**: `/api/products/{id}`
+- **Endpoint**: /api/products/{id}
 - **Body (Raw JSON)**:
   ```json
   {
@@ -197,7 +197,7 @@ This is a Spring Boot-based CRUD application that manages **categories** and **p
 
 #### **5. Delete Product**
 - **Method**: DELETE
-- **Endpoint**: `/api/products/{id}`
+- **Endpoint**: /api/products/{id}
 - **Response**:
   ```
   Product with ID {id} deleted successfully.
