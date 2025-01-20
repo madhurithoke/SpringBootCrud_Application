@@ -41,7 +41,7 @@ This is a Spring Boot-based CRUD application that manages **categories** and **p
 
 #### **1. Create Category**
 - **Method**: POST
-- **Endpoint**: `/api/categories`
+- **Endpoint**: /api/categories
 - **Body (Raw JSON)**:
   ```json
   {
@@ -51,23 +51,23 @@ This is a Spring Boot-based CRUD application that manages **categories** and **p
 - **Response**:
   ```json
   {
-    "id": 1,
+    "cid": 1,
     "cname": "Electronics"
   }
   ```
 
 #### **2. Get All Categories**
 - **Method**: GET
-- **Endpoint**: `/api/categories`
+- **Endpoint**: /api/categories
 - **Response**:
   ```json
   [
     {
-      "id": 1,
+      "cid": 1,
       "cname": "Electronics"
     },
     {
-      "id": 2,
+      "cid": 2,
       "cname": "clothes"
     }
   ]
@@ -75,18 +75,18 @@ This is a Spring Boot-based CRUD application that manages **categories** and **p
 
 #### **3. Get Category by ID**
 - **Method**: GET
-- **Endpoint**: /api/categories/{id}
+- **Endpoint**: /api/categories/1
 - **Response**:
   ```json
   {
-    "id": 1,
+    "cid": 1,
     "cname": "Electronics"
   }
   ```
 
 #### **4. Update Category**
 - **Method**: PUT
-- **Endpoint**: /api/categories/{id}
+- **Endpoint**: /api/categories/1
 - **Body (Raw JSON)**:
   ```json
   {
@@ -96,14 +96,14 @@ This is a Spring Boot-based CRUD application that manages **categories** and **p
 - **Response**:
   ```json
   {
-    "id": 1,
+    "cid": 1,
     "cname": "Updated Electronics"
   }
   ```
 
 #### **5. Delete Category**
 - **Method**: DELETE
-- **Endpoint**: /api/categories/{id}
+- **Endpoint**: /api/categories/1
 - **Response**:
   ```
   Category with ID {id} deleted successfully.
@@ -121,17 +121,19 @@ This is a Spring Boot-based CRUD application that manages **categories** and **p
   {
     "pname": "TV",
     "price": 50000.0,
-    "categoryId": 1
+    "c": {
+       "cid" : 1
+  }
   }
   ```
 - **Response**:
   ```json
   {
-    "id": 1,
+    "pid": 1,
     "pname": "TV",
     "price": 50000.0,
-    "category": {
-      "id": 1,
+    "c": {
+      "cid": 1,
       "cname": "Electronics"
     }
   }
@@ -144,11 +146,11 @@ This is a Spring Boot-based CRUD application that manages **categories** and **p
   ```json
   [
     {
-      "id": 1,
+      "pid": 1,
       "pname": "TV",
       "price": 50000.0,
-      "category": {
-        "id": 1,
+      "c": {
+        "cid": 1,
         "cname": "Electronics"
       }
     }
@@ -157,14 +159,14 @@ This is a Spring Boot-based CRUD application that manages **categories** and **p
 
 #### **3. Get Product by ID**
 - **Method**: GET
-- **Endpoint**: /api/products/{id}
+- **Endpoint**: /api/products/1
 - **Response**:
   ```json
   {
-    "id": 1,
+    "pid": 1,
     "pname": "TV",
     "price": 50000.0,
-    "category": {
+    "c": {
       "id": 1,
       "cname": "Electronics"
     }
@@ -179,17 +181,19 @@ This is a Spring Boot-based CRUD application that manages **categories** and **p
   {
     "pname": "Updated TV",
     "price": 45000.0,
-    "categoryId": 1
+     "c":{
+    "cid": 1
+  }
   }
   ```
 - **Response**:
   ```json
   {
-    "id": 1,
+    "pid": 1,
     "pname": "Updated TV",
     "price": 45000.0,
-    "category": {
-      "id": 1,
+    "c": {
+      "cid": 1,
       "cname": "Electronics"
     }
   }
@@ -197,7 +201,7 @@ This is a Spring Boot-based CRUD application that manages **categories** and **p
 
 #### **5. Delete Product**
 - **Method**: DELETE
-- **Endpoint**: /api/products/{id}
+- **Endpoint**: /api/products/1
 - **Response**:
   ```
   Product with ID {id} deleted successfully.
